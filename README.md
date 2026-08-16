@@ -34,6 +34,8 @@ Before promoting the server to a Domain Controller, a static IP address and loop
 Installed the **Active Directory Domain Services** and **DNS Server** roles via Server Manager / PowerShell.
 
 ```powershell
+
+```
 # Install AD DS role and management tools
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
