@@ -1,13 +1,32 @@
 # Window-Server-Home-Lab
 Active Directory DS deployment, Group Policy enforcement, and telemetry logging lab
 
-## Overview
-A concise 2–3 sentence summary of the project. Explain what you built, the primary objective (e.g., threat detection, identity management, compliance auditing), and why it matters.
-
 ## Environment & Tools Used
-* **Operating Systems:** Windows Server 2022, Windows 10/11, Ubuntu Linux
+* **Operating Systems:** Windows Server 2025, Windows 10/11, Ubuntu Linux
 * **Security Tools:** Microsoft Defender, Wireshark, Splunk / Wazuh SIEM
 * **Networking & Protocols:** TCP/IP, DNS, DHCP, Active Directory Domain Services (AD DS)
 * **Frameworks Aligned:** NIST CSF, CIA Triad
 
 ## Architecture & Lab Topology
+# 🛡️ Active Directory & Windows Server Security Homelab
+
+## 📌 Overview
+This project documents the deployment, configuration, and hardening of a virtualized **Active Directory Domain Services (AD DS)** environment. Built from scratch using Windows Server 2022, this lab simulates an enterprise network to practice identity and access management (IAM), Group Policy Object (GPO) security baselines, PowerShell automation, and centralized telemetry collection.
+
+---
+
+## 📐 Architecture & Topology
+
+```text
+               +-------------------------------------------------+
+               |             Internal Virtual Network            |
+               +-------------------------------------------------+
+                                        |
+                 +----------------------+----------------------+
+                 |                                             |
+  +------------------------------+              +------------------------------+
+  |  Windows Server 2025 DC      |              |  Windows 10/11 Workstation   |
+  |  Hostname: DC-01             |              |  Hostname: WS-01             |
+  |  IP: 192.168.1.10 /24        |              |  IP: DHCP (192.168.10.100+)  |
+  |  Roles: AD DS, DNS, DHCP     |              |  Domain Joined               |
+  +------------------------------+              +------------------------------+
