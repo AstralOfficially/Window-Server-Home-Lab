@@ -1,9 +1,6 @@
 # Window-Server-Home-Lab
 Active Directory DS deployment, Group Policy enforcement, and telemetry logging lab
 
-
-# [Project Title: e.g., Active Directory & SIEM Lab Setup]
-
 ## Overview
 A concise 2–3 sentence summary of the project. Explain what you built, the primary objective (e.g., threat detection, identity management, compliance auditing), and why it matters.
 
