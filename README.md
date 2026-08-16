@@ -11,9 +11,31 @@ Active Directory DS deployment, Group Policy enforcement, and telemetry logging 
 # 🛡️ Active Directory & Windows Server Security Homelab
 
 ## 📌 Overview
-This project documents the deployment, configuration, and hardening of a virtualized **Active Directory Domain Services (AD DS)** environment. Built from scratch using Windows Server 2025, this lab simulates an enterprise network to practice identity and access management (IAM), Group Policy Object (GPO) security baselines, PowerShell automation, and centralized telemetry collection.
+This project documents the step-by-step deployment, configuration, and hardening of an enterprise **Active Directory Domain Services (AD DS)** environment. Built on Windows Server, this lab serves as the identity and access management (IAM) backbone for testing security policies, PowerShell automation, and centralized security monitoring.
 
 ---
+## ⚙️ Phase 1: Network & Base Configuration
+
+Before promoting the server to a Domain Controller, a static IP address and loopback DNS configuration were established to ensure reliable network and domain services resolution.
+
+* **Static IP:** `192.168.1.10`
+* **Subnet Mask:** `255.255.255.0`
+* **Default Gateway:** `192.168.1.1`
+* **Preferred DNS (Loopback):** `127.0.0.1`
+
+### Configuration Evidence:
+![Static IP Configuration](Static%20IP.png)
+
+---
+
+## 🏗️ Phase 2: Active Directory Domain Services (AD DS) & Domain Promotion
+
+### 1. AD DS Role Installation
+Installed the **Active Directory Domain Services** and **DNS Server** roles via Server Manager / PowerShell.
+
+```powershell
+# Install AD DS role and management tools
+Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
 ## Screeshots
 ![Static IP Configuration](Static%20IP.png)
