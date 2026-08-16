@@ -34,7 +34,16 @@ Before promoting the server to a Domain Controller, a static IP address and loop
 Installed the **Active Directory Domain Services** and **DNS Server** roles via Server Manager / PowerShell.
 
 ```powershell
-
+# PowerShell deployment equivalent
+Install-ADDSForest `
+    -DomainName "lab.local" `
+    -DomainNetbiosName "LAB" `
+    -InstallDns:$true `
+    -CreateDnsDelegation:$false `
+    -DatabasePath "C:\Windows\NTDS" `
+    -LogPath "C:\Windows\NTDS" `
+    -SysvolPath "C:\Windows\SYSVOL" `
+    -Force:$true
 ```
 # Install AD DS role and management tools
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
