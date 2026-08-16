@@ -45,10 +45,17 @@ Install-ADDSForest `
     -SysvolPath "C:\Windows\SYSVOL" `
     -Force:$true
 ```
+🔜 Upcoming Milestones & Roadmap
+[x] Static IP and loopback DNS configuration
+[x] AD DS role installation and DC promotion
+[ ] Configure DNS forwarders (e.g., Cloudflare 1.1.1.1 / Google 8.8.8.8)
+[ ] Tiered Organizational Unit (OU) design & IAM structure
+[ ] PowerShell bulk user onboarding via CSV
+[ ] Baseline Group Policy Object (GPO) security hardening
+[ ] Sysmon and SIEM integration for security telemetry
+
 # Install AD DS role and management tools
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
-
-
 
 ## 📐 Architecture & Topology
 
