@@ -1,0 +1,9 @@
+Q: Why promote a server to a Domain Controller?
+
+A: Promoting a server to a Domain Controller is a pivotal step for centralized network management. It provides key capabilities including:
+
+Centralized Identity & Access Management: Transforms the server into the primary authority for authenticating users and controlling access permissions across the network.
+
+Domain Infrastructure Creation: Establishes a domain—a logical grouping of resources—to create a secure, unified environment for managing users, computers, and networked devices.
+
+Advanced Feature Support: Lays the foundation for core enterprise technologies, such as DNS integration, Group Policy Management, and Active Directory Federation Services (AD FS).
