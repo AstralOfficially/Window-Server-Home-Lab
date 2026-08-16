@@ -11,7 +11,7 @@ Active Directory DS deployment, Group Policy enforcement, and telemetry logging 
 # 🛡️ Active Directory & Windows Server Security Homelab
 
 ## 📌 Overview
-This project documents the deployment, configuration, and hardening of a virtualized **Active Directory Domain Services (AD DS)** environment. Built from scratch using Windows Server 2022, this lab simulates an enterprise network to practice identity and access management (IAM), Group Policy Object (GPO) security baselines, PowerShell automation, and centralized telemetry collection.
+This project documents the deployment, configuration, and hardening of a virtualized **Active Directory Domain Services (AD DS)** environment. Built from scratch using Windows Server 2025, this lab simulates an enterprise network to practice identity and access management (IAM), Group Policy Object (GPO) security baselines, PowerShell automation, and centralized telemetry collection.
 
 ---
 
