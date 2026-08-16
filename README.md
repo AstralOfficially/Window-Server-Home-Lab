@@ -17,6 +17,21 @@ This project documents the deployment, configuration, and hardening of a virtual
 
 ## Screeshots
 ![Static IP Configuration](Static%20IP.png)
+
+## Frequently Asked Questions (FAQ)
+
+### Key Concepts
+
+<details>
+<summary><b>Why promote a server to a Domain Controller?</b></summary>
+<br>
+Promoting a server to a Domain Controller is a pivotal step in establishing centralized network administration and security management. Key benefits include:
+* **Centralized Identity & Access Management (IAM):** Transforms the server into the central authority for authenticating identities and managing access across the entire network.
+* **Domain Creation & Security:** Creates a domain—a logical grouping of resources—providing a secure, unified environment to manage users, endpoints, and network assets.
+* **Core Infrastructure Integration:** Establishes the necessary foundation for enterprise features, including **DNS integration**, **Group Policy Management (GPO)**, and **Active Directory Federation Services (AD FS)**.
+---
+</details>
+
 ## 📐 Architecture & Topology
 
 ```text
