@@ -76,7 +76,7 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 ```
 ## Screeshots
 ![Static IP Configuration](Static%20IP.png)
-
+![Add Active Directory](Add%20Ad.png)
 ## Frequently Asked Questions (FAQ)
 
 ### Key Concepts
