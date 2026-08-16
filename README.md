@@ -15,6 +15,8 @@ This project documents the deployment, configuration, and hardening of a virtual
 
 ---
 
+## Screeshots
+![Static IP Configuration](Static%20IP.png)
 ## 📐 Architecture & Topology
 
 ```text
@@ -30,3 +32,5 @@ This project documents the deployment, configuration, and hardening of a virtual
   |  IP: 192.168.1.10 /24        |              |  IP: DHCP (192.168.10.100+)  |
   |  Roles: AD DS, DNS, DHCP     |              |  Domain Joined               |
   +------------------------------+              +------------------------------+
+
+
