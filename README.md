@@ -52,13 +52,11 @@ Install-ADDSForest `
 <details>
 <summary>[x] Static IP and loopback DNS configuration
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Add Roles and Features from Dashboard</li>
+        <li>Install>Role-Based>Add Directory Domain Services, Add AD DS</li>
     </ul>
 </summary>
-</details>
-<details>
+<br />
 <summary>[x] AD DS role installation and DC promotion
      <ul>
         <li></li>
