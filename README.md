@@ -55,13 +55,14 @@ Install-ADDSForest `
         <li>Add Roles and Features from Dashboard</li>
         <li>Install>Role-Based>Add Directory Domain Services, Add AD DS</li>
     </ul>
-</summary>
-<br />
+</summary></details>
+<details>
 <summary>[x] AD DS role installation and DC promotion
      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Install AD DS Role via Server Manager</li>
+        <li>Promoted Server to a Domain Controller(DC)</li>
+        <li>Creating a New Forest and the domain</li>
+        <li>Verified the Domain Controller is functioning by checking AD Tools and testing DNS Resolution(cmd>NSLookup RootName)</li>
     </ul>
 </summary>
 </details>
