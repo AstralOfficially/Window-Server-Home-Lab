@@ -48,6 +48,47 @@ Install-ADDSForest `
     -SysvolPath "C:\Windows\SYSVOL" `
     -Force:$true
 ```
+
+## 👥 Phase 3: Identity & Access Management (IAM) — OU & User Provisioning
+
+To enforce the principle of least privilege and maintain clean directory organization, a structured Organizational Unit (OU) and role-based access control (RBAC) hierarchy was deployed.
+
+### 1. Structure Overview
+* **Parent OU:** `Employees`
+* **Security Groups:**
+  * `SG-IT-Department` (Global Security Group for IT staff and administrators)
+  * `SG-Sales` (Global Security Group for sales personnel)
+* **Users:** Provisioned department-specific user accounts and assigned them to their respective security groups.
+
+---
+
+### 2. Implementation & Commands
+
+#### Via PowerShell:
+```powershell
+# 1. Create the Employees Organizational Unit (OU)
+New-ADOrganizationalUnit -Name "Employees" -Path "DC=lab,DC=local" -ProtectedFromAccidentalDeletion $true
+
+# 2. Create Security Groups inside the Employees OU
+New-ADGroup -Name "SG-IT-Department" -GroupScope Global -GroupCategory Security -Path "OU=Employees,DC=lab,DC=local"
+New-ADGroup -Name "SG-Sales" -GroupScope Global -GroupCategory Security -Path "OU=Employees,DC=lab,DC=local"
+
+# 3. Create Users with initial credentials
+New-ADUser -Name "John Doe" -GivenName "John" -Surname "Doe" -SamAccountName "jdoe" `
+    -UserPrincipalName "jdoe@lab.local" -Path "OU=Employees,DC=lab,DC=local" `
+    -AccountPassword (ConvertTo-SecureString "TempPass123!" -AsPlainText -Force) `
+    -Enabled $true -ChangePasswordAtLogon $true
+
+New-ADUser -Name "Jane Smith" -GivenName "Jane" -Surname "Smith" -SamAccountName "jsmith" `
+    -UserPrincipalName "jsmith@lab.local" -Path "OU=Employees,DC=lab,DC=local" `
+    -AccountPassword (ConvertTo-SecureString "TempPass123!" -AsPlainText -Force) `
+    -Enabled $true -ChangePasswordAtLogon$true
+
+# 4. Add Users to Respective Groups
+Add-ADGroupMember -Identity "SG-IT-Department" -Members "jdoe"
+Add-ADGroupMember -Identity "SG-Sales" -Members "jsmith"
+```
+
 🔜 Upcoming Milestones & Roadmap
 <details>
 <summary>[x] Static IP and loopback DNS configuration
@@ -67,7 +108,7 @@ Install-ADDSForest `
 </summary>
 </details>
 <details>
-<summary>[ ] Configure DNS forwarders (e.g., Cloudflare 1.1.1.1 / Google 8.8.8.8)
+<summary>[x] Create Employees OU, departmental security groups (IT, Sales), and user accounts
      <ul>
         <li></li>
         <li></li>
