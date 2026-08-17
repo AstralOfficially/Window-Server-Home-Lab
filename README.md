@@ -16,7 +16,8 @@ This project documents the step-by-step deployment, configuration, and hardening
 ---
 ## ⚙️ Phase 1: Network & Base Configuration
 
-Before promoting the server to a Domain Controller, a static IP address and loopback DNS configuration were established to ensure reliable network and domain services resolution.
+Before promoting the server to a Domain Controller, a static IP address and loopback DNS configuration were established to ensure reliable network and domain services resolution.<br />
+(Using Class C IP's here for Samples, I am actually using class A IP's for massive space, short numbers that are easy to type and more freedom to segment[using subnets or Vlans])<br />
 
 * **Static IP:** `192.168.1.10`
 * **Subnet Mask:** `255.255.255.0`
