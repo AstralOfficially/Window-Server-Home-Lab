@@ -55,7 +55,7 @@ Install-ADDSForest `
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>   
+    </ul></summary>
 <summary>[x] AD DS role installation and DC promotion
      <ul>
         <li></li>
@@ -92,7 +92,7 @@ Install-ADDSForest `
         <li></li>
         <li></li>
     </ul></summary>
-</details>details>
+</details>
 # Install AD DS role and management tools
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
