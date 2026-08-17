@@ -81,10 +81,11 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 <details>
 <summary><b>Why promote a server to a Domain Controller?</b></summary>
 <br>
-Promoting a server to a Domain Controller is a pivotal step in establishing centralized network administration and security management. Key benefits include:<br>
-* Centralized Identity & Access Management (IAM):** Transforms the server into the central authority for authenticating identities and managing access across the entire network.<br>
-* Domain Creation & Security:** Creates a domain—a logical grouping of resources—providing a secure, unified environment to manage users, endpoints, and network assets.<br>
-* Core Infrastructure Integration:** Establishes the necessary foundation for enterprise features, including **DNS integration**, **Group Policy Management (GPO)**, and **Active Directory Federation Services (AD FS)**.
+<ul>Promoting a server to a Domain Controller is a pivotal step in establishing centralized network administration and security management. Key benefits include:<br>
+<li> Centralized Identity & Access Management (IAM):** Transforms the server into the central authority for authenticating identities and managing access across the entire network.</li>
+<li> Domain Creation & Security:** Creates a domain—a logical grouping of resources—providing a secure, unified environment to manage users, endpoints, and network assets.</li>
+<li> Core Infrastructure Integration:** Establishes the necessary foundation for enterprise features, including **DNS integration**, **Group Policy Management (GPO)**, and **Active Directory Federation Services (AD FS)**.<li>
+</ul>
 ---
 </details><br>
 
