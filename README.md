@@ -25,6 +25,8 @@ Before promoting the server to a Domain Controller, a static IP address and loop
 
 ### Configuration Evidence:
 ![Static IP Configuration](Static%20IP.png)
+![Active Directory Promote](PromoteServer_to_DC.png)
+![Complete Installation](ActiveDomain.png)
 
 ---
 
@@ -90,11 +92,11 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 ---
 </details><br>
 
-
-
 ## Screeshots
 ![Static IP Configuration](Static%20IP.png)
 ![Add Active Directory](Add%20AD.png)
 ![Add Active Directory Installation](Add%20AD-confirmation.png)
+![Active Directory Promote](PromoteServer_to_DC.png)
+![Complete Installation](ActiveDomain.png)
 
 
