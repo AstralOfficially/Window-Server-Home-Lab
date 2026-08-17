@@ -55,44 +55,54 @@ Install-ADDSForest `
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary><details>
+    </ul>
+</summary>
+</details>
+<details>
 <summary>[x] AD DS role installation and DC promotion
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary><details>
+    </ul>
+</summary>
+</details>
+<details>
 <summary>[ ] Configure DNS forwarders (e.g., Cloudflare 1.1.1.1 / Google 8.8.8.8)
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
+    </ul></summary></details>
+<details>
 <summary>[ ] Tiered Organizational Unit (OU) design & IAM structure
     <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
+    </ul></summary></details>
+<details>
 <summary>[ ] PowerShell bulk user onboarding via CSV
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
+    </ul></summary></details>
+<details>
 <summary>[ ] Baseline Group Policy Object (GPO) security hardening
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
+    </ul></summary></details>
+<details>
 <summary>[ ] Sysmon and SIEM integration for security telemetry
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
-</details>
+    </ul></summary></details>
+    
 # Install AD DS role and management tools
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
