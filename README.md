@@ -50,48 +50,48 @@ Install-ADDSForest `
 ```
 🔜 Upcoming Milestones & Roadmap
 <details>
-<summary>[x] Static IP and loopback DNS configuration</summary>
+<summary>[x] Static IP and loopback DNS configuration
     <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-<summary>[x] AD DS role installation and DC promotion</summary>
+    </ul></summary>   
+<summary>[x] AD DS role installation and DC promotion
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-<summary>[ ] Configure DNS forwarders (e.g., Cloudflare 1.1.1.1 / Google 8.8.8.8)</summary>
+    </ul></summary>
+<summary>[ ] Configure DNS forwarders (e.g., Cloudflare 1.1.1.1 / Google 8.8.8.8)
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-<summary>[ ] Tiered Organizational Unit (OU) design & IAM structure</summary> 
+    </ul></summary>
+<summary>[ ] Tiered Organizational Unit (OU) design & IAM structure
     <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-<summary>[ ] PowerShell bulk user onboarding via CSV</summary>
+    </ul></summary>
+<summary>[ ] PowerShell bulk user onboarding via CSV
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-<summary>[ ] Baseline Group Policy Object (GPO) security hardening</summary>
+    </ul></summary>
+<summary>[ ] Baseline Group Policy Object (GPO) security hardening
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-<summary>[ ] Sysmon and SIEM integration for security telemetry</summary>
+    </ul></summary>
+<summary>[ ] Sysmon and SIEM integration for security telemetry
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
+    </ul></summary>
 </details>details>
 # Install AD DS role and management tools
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
