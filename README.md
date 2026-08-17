@@ -55,13 +55,13 @@ Install-ADDSForest `
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
+    </ul></summary><details>
 <summary>[x] AD DS role installation and DC promotion
      <ul>
         <li></li>
         <li></li>
         <li></li>
-    </ul></summary>
+    </ul></summary><details>
 <summary>[ ] Configure DNS forwarders (e.g., Cloudflare 1.1.1.1 / Google 8.8.8.8)
      <ul>
         <li></li>
