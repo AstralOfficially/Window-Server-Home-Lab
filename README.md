@@ -28,6 +28,8 @@ Before promoting the server to a Domain Controller, a static IP address and loop
 ![Static IP Configuration](Static%20IP.png)
 ![Active Directory Promote](PromoteServer_to_DC.png)
 ![Complete Installation](ActiveDomain.png)
+![Create OU](CreateOU.png)
+![Create Group](CreateGroup.png)
 
 ---
 
@@ -110,9 +112,8 @@ Add-ADGroupMember -Identity "SG-Sales" -Members "jsmith"
 <details>
 <summary>[x] Create Employees OU, departmental security groups (IT, Sales), and user accounts
      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Create OU named Employees</li>
+        <li>Create Group IT-Department and Sales-Department</li>
     </ul></summary></details>
 <details>
 <summary>[ ] Tiered Organizational Unit (OU) design & IAM structure
